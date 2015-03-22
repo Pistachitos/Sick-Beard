@@ -1311,6 +1311,7 @@ class ConfigProviders:
                       iptorrents_username=None, iptorrents_password=None, iptorrents_freeleech=None,
                       nyaatorrents_category=None, nyaatorrents_filter=None,
                       newzbin_username=None, newzbin_password=None,
+                      kickass_alt_url = None,
                       provider_order=None):
 
         results = []
@@ -1384,6 +1385,8 @@ class ConfigProviders:
                 newznabProviderDict[curProvider].enabled = bool(curEnabled)
             elif curProvider == 'dailytvtorrents':
                 sickbeard.DTT = curEnabled                
+            elif curProvider == 'kickass':
+                sickbeard.KICKASS = curEnabled
             elif curProvider == 'thepiratebay':
                 sickbeard.THEPIRATEBAY = curEnabled
             elif curProvider == 'torrentleech':
@@ -1435,7 +1438,7 @@ class ConfigProviders:
             sickbeard.THEPIRATEBAY_PROXY_URL = ""
             
         sickbeard.THEPIRATEBAY_PROXY = thepiratebay_proxy
-        
+        sickbeard.KICKASS_ALT_URL = kickass_alt_url.strip()
         sickbeard.TORRENTLEECH_USERNAME = torrentleech_username
         sickbeard.TORRENTLEECH_PASSWORD = torrentleech_password    
 
