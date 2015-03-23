@@ -229,6 +229,21 @@ var show_nzb_providers = #if $sickbeard.USE_NZBS then "true" else "false"#;
                             </label>
                         </div>
                     </div>
+                    
+                    <div class="providerDiv" id="kickassDiv">
+                        <div class="field-pair">
+                            <label class="clearfix">
+                                <span class="component-title">Alt Proxy URL:</span>
+                                <input class="component-desc" type="text" name="kickass_alt_url" value="$sickbeard.KICKASS_ALT_URL" size="40" />
+                            </label>
+                        </div>
+                        <div class="field-pair">
+                            <label class="clearfix">
+                                <span class="component-title">&nbsp;</span>
+                                <span class="component-desc"><i>Example:</i> <a href="http://katproxy.com/" target="_blank">http://katproxy.com/</a></span>
+                            </label>
+                        </div>
+                    </div><!-- /KickAssDiv //-->
 
                     <div class="providerDiv" id="btnDiv">
                         <div class="field-pair">
