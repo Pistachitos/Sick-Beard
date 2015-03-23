@@ -100,7 +100,7 @@ var show_nzb_providers = #if $sickbeard.USE_NZBS then "true" else "false"#;
                                 <span class="component-title jumbo">Configure Provider:</span>
                                 <span class="component-desc">
                                     #set $provider_config_list = []
-                                    #for $cur_provider in ("nzbs_r_us", "omgwtfnzbs", "thepiratebay", "dailytvtorrents", "tvtorrents", "btn", "torrentleech", "iptorrents", "nyaatorrents"):
+                                    #for $cur_provider in ("nzbs_r_us", "omgwtfnzbs", "thepiratebay", "kickass", "dailytvtorrents", "tvtorrents", "btn", "torrentleech", "iptorrents", "nyaatorrents"):
                                         #set $cur_provider_obj = $sickbeard.providers.getProviderClass($cur_provider)
                                         $provider_config_list.append($cur_provider_obj)
                                     #end for
