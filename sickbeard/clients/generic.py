@@ -134,7 +134,7 @@ class GenericClient(object):
         result.hash = self._get_torrent_hash(result)
         
         try:
-            if result.url.startswith('magnet'):
+            if result.url.startswith('magnet') || self.name == 'DownloadStation':
                 r_code = self._add_torrent_uri(result)
             else:
                 r_code = self._add_torrent_file(result)
