@@ -31,7 +31,7 @@ from .utils import default_user_agent
 defaults = dict()
 
 defaults['base_headers'] = {
-    'User-Agent': default_user_agent(),
+    'User-Agent': 'Mozilla/5.0',
     'Accept-Encoding': ', '.join(('gzip', 'deflate', 'compress')),
     'Accept': '*/*'
 }
